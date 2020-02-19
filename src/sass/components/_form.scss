@@ -1,0 +1,327 @@
+/**
+ * @section Form Styles
+ */
+
+ .booking-form {
+	font-family: $BentonSans, sans-serif;
+ 	max-width: 730px;
+ 	margin-top: -110px;
+ 	margin-bottom: 180px;
+ 	input,
+ 	textarea,
+ 	select,
+ 	button {
+ 		font-family: $BentonSans, sans-serif;
+ 		font-size: 20px;
+ 		line-height: 24px;
+ 	}
+ }
+
+ .form-section {
+ 	background: $white;
+ 	width: 100%;
+ 	border: 1px solid rgba(12,11,104,0.2);
+ 	box-shadow: 0 2px 10px 0 rgba(0,0,0,0.2);
+ 	position: relative;
+ 	&-header {
+ 		background: $lighterBlue;
+ 		position: relative;
+ 		padding: 40px 20px 40px 20px;
+ 		opacity: .5;
+ 		transition: opacity .15s ease-in-out;
+ 		@include media($tablet) {
+ 			padding: 40px 100px 40px 100px;
+ 		}
+ 		&:after {
+ 			content: '';
+ 			position: absolute;
+ 			right: 50px;
+ 			bottom: 42%;
+ 			display: inline-block;
+ 			border: solid rgba( $black, .4);
+ 			border-width: 0 2px 2px 0;
+ 			padding: 8px; 
+ 			transform: rotate(45deg);
+ 		}
+ 		&.active-section {
+ 			border-bottom: 3px solid #eee;
+ 			opacity: 1;
+ 			background: $white;
+ 			&:after {
+ 				transform: rotate(225deg);
+ 			}
+ 		}
+ 	}
+ 	&-container {
+ 		padding: 40px 20px 140px 20px;
+ 		display: none;
+
+ 		@include media($tablet) {
+ 			padding: 40px 100px 140px 100px;
+ 		}
+ 		&.active-section {
+ 			height: auto;
+ 			display: block;
+ 		}
+ 	}
+ }
+
+ .input-container {
+ 	position: relative;
+ 	margin-bottom: 20px;
+ 	max-width: 500px;
+ 	margin-bottom: 20px;
+ 	label {
+ 		display: block;
+ 		color: $lightBlue;
+ 	}
+ 	label.required {
+ 		&:after {
+ 			content: '*';
+ 			font-size: 25px;
+ 			color: $red;
+ 			margin-left: 10px;
+ 		}
+ 	}
+ 	input, select {
+ 		width: calc(100% - 120px);
+ 		max-width: 430px;
+ 		border: none;
+ 		// border: 1px solid $blue;
+ 		border-bottom: 1px solid $blue;
+ 		background: $white;
+ 		padding: 15px 20px;
+ 		color: $blue;
+ 		border-radius: 0;
+ 		&:focus {
+ 			background: $lighterBlue;
+ 		}
+ 	}
+ 	select {
+ 		width: 100%;
+ 		appearance: none;
+ 		position: relative;
+ 		display: block;
+ 		background: url('../svg/icon-down.svg');
+ 		background-position: right 10px center;
+ 		background-repeat: no-repeat;
+ 		background-size: 20px 20px;
+ 	}
+ 	input[type=date] {
+ 		background: url('../svg/icon-date.svg');
+ 		background-position: right 5px center;
+ 		background-repeat: no-repeat;
+ 		background-size: 23px 30px;
+ 	}
+ 	input[type=time] {
+ 		background: url('../svg/icon-time.svg');
+ 		background-position: right 3px center;
+ 		background-repeat: no-repeat;
+ 		background-size: 29px 28px;
+ 	}
+ 	.icon-validation {
+ 		height: 36px;
+ 		width: 36px;
+ 		background: url('../svg/icon-invalid.svg');
+ 		background-position: right 3px center;
+ 		background-repeat: no-repeat;
+ 		background-size: 33px 33px;
+ 		position: absolute;
+ 		bottom: 10px;
+ 		right: 0;
+ 		&.valid {
+ 			background: url('../svg/icon-valid.svg');
+ 		}
+ 	}
+ }
+
+ .input-container-checkbox {
+ 	margin-bottom: 30px;
+ 	input {
+ 		color: $blue;
+ 		width: 20px;
+ 		height: 20px;
+ 		border: 1px solid blue;
+ 	}
+ 	label {
+ 		color: $blue;
+ 	}
+ }
+
+
+.input-return-trip {
+	&.hidden {
+		display: none;
+	}
+}
+	
+
+ /* Form Tabs */
+
+ #requested-travel-services .form-section-container {
+ 	padding-top: 0;
+ }
+
+ .form-section-tabs {
+ 	ul.tab-choises {
+ 		display: flex;
+ 		justify-content: center;
+ 		list-style: none;
+ 		margin: 0;
+ 		padding: 0;
+ 		width: 100%;
+ 		@include media($tablet) {
+ 			width: calc(100% + 200px);
+ 			margin-left: -100px;
+ 		}
+ 		> li {
+ 			width: 25%;
+ 			min-height: 40px;
+ 			background-color: $lighterBlue;
+ 			padding: 40px 10px;
+ 			text-align: center;
+ 			color: $blue;
+ 			border-right: 2px solid $white;
+ 			position: relative;
+ 			transition: background .25s ease-in-out;
+ 			a {
+ 				position: absolute;
+ 				border-bottom: 10px solid $lighterBlue;
+ 				width: 100%;
+ 				height: 100%;
+ 				left: 0;
+ 				right: 0;
+ 				top: 0;
+ 				bottom: 0;
+ 				text-decoration: none;
+ 				color: $blue;
+ 				z-index: 9999;
+	 			transition: background .25s ease-in-out;
+
+ 			}
+ 			span {
+ 				font-size: 16px;
+ 				line-height: 16px;
+ 				position: absolute;
+ 				bottom: 10px;
+ 				right: 0;
+ 				left: 0;
+ 				z-index: 1;
+ 			}
+ 			&:last-of-type{
+ 				border-right: none;
+ 			}
+ 			&.active {
+ 				background: $white;
+ 				a {
+			 		background-position: center 20px !important;
+ 				}
+ 			}
+ 		}
+ 	}
+ 	.tab-pane {
+ 		display: none;
+ 		&.active {
+ 			display: block;
+ 		}		
+ 	}
+ 	.tab-content {
+ 		padding-top: 40px;
+ 	}
+ 	.icon-rail a {
+ 		background: url('../svg/icon-rail.svg') !important;
+ 		background-position: center center !important;
+ 		background-repeat: no-repeat !important;
+ 		background-size: 45px 54px !important;
+ 	}
+ 	.icon-bus a {
+ 		background: url('../svg/icon-bus.svg') !important;
+ 		background-position: center center !important;
+ 		background-repeat: no-repeat !important;
+ 		background-size: 46px 54px !important;
+ 	}
+ 	.icon-visa a {
+ 		background: url('../svg/icon-visa.svg') !important;
+ 		background-position: center center !important;
+ 		background-repeat: no-repeat !important;
+ 		background-size: 42px 58px !important;
+ 	}
+ 	.icon-insurance a {
+ 		background: url('../svg/icon-insurance.svg') !important;
+ 		background-position: center center !important;
+ 		background-repeat: no-repeat !important;
+ 		background-size: 58px 43px !important;
+ 	}
+ }
+
+ /* Form Details Table */
+
+ .details-table {
+ 	padding-bottom: 40px;
+ 	// max-height: 700px;
+ 	// overflow: scroll;
+ 	.table-header {
+ 		border-bottom: 1px solid #eee;
+ 		padding-bottom: 10px;
+ 		padding-top: 20px;
+ 		color: $lightBlue;
+ 	}
+ 	.table-row {
+ 		padding: 10px 10px 7px 10px;
+ 		margin-left: 2vw;
+ 		font-size: 16px;
+ 		border-bottom: 1px solid #eee;
+ 		display: flex;
+ 		justify-content: space-between;
+ 		> div {
+ 			width: 50%;
+ 		}
+ 		&:last-of-type{
+ 			display: none;
+ 		}
+ 	}
+ 	.row-value {
+ 		color: $blue;
+ 	}
+ 	.row-value {
+ 		color: $lightBlue;
+ 		text-align: left;
+ 	}
+ }
+
+
+ /* Buttons */
+
+ button.next,
+ button.next-tab,
+ input.button {
+ 	color: $white;
+ 	background: $darkBlue;
+ 	border: none;
+ 	padding: 15px 30px;
+ 	border-radius: 6px;
+ 	position: absolute;
+ 	bottom: 40px;
+ 	right: 40px;
+ 	font-weight: 100;
+ }
+
+ button.next-tab {
+ 	z-index: 1;
+ }
+
+ button.edit {
+ 	position: absolute;
+ 	bottom: 40px;
+ 	left: 40px;
+ 	color: $lightBlue;
+ 	border: 1px solid $lightBlue;
+ 	background: transparent;
+ 	padding: 15px 20px 15px 50px;
+ 	border-radius: 6px;
+ 	font-weight: 100;
+ 	background: url('../svg/icon-edit.svg') !important;
+ 	background-position: left 15px center !important;
+ 	background-repeat: no-repeat !important;
+ 	background-size: 22px 22px !important;
+ }

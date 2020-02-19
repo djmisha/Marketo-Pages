@@ -1,0 +1,104 @@
+// hide while building
+
+header img,
+.banner,
+#travel-inquery-form,
+#requested-travel-services,
+#confirm-details,
+footer,
+.tab-content-rail,
+.tab-content-bus,
+.tab-content-visas
+
+ {
+	// display: none;
+}
+
+
+/**
+ * @section Variables
+ */
+
+
+$white: #fff;
+$black: #000;
+
+$blue: #0C0B68;
+$lightBlue: #006FCF;
+$lighterBlue: rgba(0,111,207,0.1);
+$darkBlue: #021a58;
+
+$red: #CF0000;
+$textColor : #00175A;
+
+// Media Query break points
+
+$tablet: 768px;
+$desktop: 1080px;
+$full: 1480px;
+
+$ipad-min: 768px;
+$ipad-max: 1024px;
+
+$ipadpro-min: 1024px;
+$ipadpro-max: 1366px;
+
+$ipad: ipads;
+$ipads: ipads;
+
+
+/* Fonts */
+
+$BentonSans: "Benton Sans", sans-serif;
+
+//Benton Sans
+
+@font-face {
+  font-family: 'Benton Sans';
+  src: url('../fonts/benton-sans-light/BentonSansLight.eot');
+  src: url('../fonts/benton-sans-light/BentonSansLight.eot') format('embedded-opentype'),
+  url('../fonts/benton-sans-light/BentonSansLight.woff2') format('woff2'),
+  url('../fonts/benton-sans-light/BentonSansLight.woff') format('woff'),
+  url('../fonts/benton-sans-light/BentonSansLight.ttf') format('truetype');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'Benton Sans';
+  src: url('../fonts/benton-sans-book/BentonSansBook.eot');
+  src: url('../fonts/benton-sans-book/BentonSansBook.eot') format('embedded-opentype'),
+  url('../fonts/benton-sans-book/BentonSansBook.woff2') format('woff2'),
+  url('../fonts/benton-sans-book/BentonSansBook.woff') format('woff'),
+  url('../fonts/benton-sans-book/BentonSansBook.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Benton Sans';
+  src: url('../fonts/benton-sans-regular/BentonSansRegular.eot');
+  src: url('../fonts/benton-sans-regular/BentonSansRegular.eot') format('embedded-opentype'),
+  url('../fonts/benton-sans-regular/BentonSansRegular.woff2') format('woff2'),
+  url('../fonts/benton-sans-regular/BentonSansRegular.woff') format('woff'),
+  url('../fonts/benton-sans-regular/BentonSansRegular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Benton Sans';
+  src: url('../fonts/benton-sans-medium/BentonSansMedium.eot');
+  src: url('../fonts/benton-sans-medium/BentonSansMedium.eot') format('embedded-opentype'),
+  url('../fonts/benton-sans-medium/BentonSansMedium.woff2') format('woff2'),
+  url('../fonts/benton-sans-medium/BentonSansMedium.woff') format('woff'),
+  url('../fonts/benton-sans-medium/BentonSansMedium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Benton Sans';
+  src: url('../fonts/benton-sans-bold/BentonSansBold.eot');
+  src: url('../fonts/benton-sans-bold/BentonSansBold.eot') format('embedded-opentype'),
+  url('../fonts/benton-sans-bold/BentonSansBold.woff') format('woff'),
+  url('../fonts/benton-sans-bold/BentonSansBold.ttf') format('truetype');
+  font-weight: 700;
+}
+

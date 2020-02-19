@@ -1,0 +1,131 @@
+/**
+ * @section Base Styles
+ */
+
+body {
+	margin: 0 auto;
+	width: 100%;
+	background: #fff;
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.banner h1,
+.banner span,
+.booking-form h2, 
+.booking-form h3,
+.booking-form p {
+	font-family: $BentonSans, sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+.banner h1 {
+	font-weight: bold;
+	color: #006FCF;
+	font-size: 25px;
+	line-height: 30px;
+}
+
+.booking-form h2 {
+	color: #006FCF;
+	font-size: 25px;
+	line-height: 30px;
+}
+
+.booking-form h3 {
+	color: #006FCF;
+	font-size: 24px;
+	line-height: 30px;
+	padding-bottom: 20px;
+}
+
+.booking-form p {
+	color: $textColor;
+	padding-bottom: 30px;
+}
+
+header.booking-header {
+	height: 100px;
+	display: flex;
+	align-items: center;
+	img {
+		width: 233px;
+		height: 75px;
+	}
+}
+
+.banner {
+	background: $blue url('../img/header.jpg') center center no-repeat;
+	background-size: cover;
+	height: 480px;
+	> div {
+		width: 100%;
+	}
+	h1, span {
+		color: $white;
+		text-transform: uppercase;
+	}
+	h1 {
+		padding-top: 160px;
+		font-size: 28px;
+		font-weight: normal;
+	}
+	span {
+		font-weight: bold;
+		display: block;
+		font-size: 40px;
+		padding-top: 20px;
+		line-height: 42px;
+	}
+}
+
+
+header, section {
+	padding: 0 20px;
+	@include media(1280px) {
+		padding: 0 calc(40px + (50% - (1280px / 2)));
+	}
+}
+
+
+footer {
+	font-family: $BentonSans, sans-serif;
+	color: $white;
+	min-height: 500px;
+	margin-bottom: 100px;
+	.footer-box {
+		margin: 0 auto;
+		background: $lightBlue;
+		max-width: 1080px;
+		padding: 100px 100px;
+	}
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		li {
+			margin: 0;
+			padding: 0;
+		}
+	}
+	a {
+		text-decoration: none;
+		color: $white;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	.footer-text {
+		margin-top: 80px;
+		padding-top: 100px;
+		border-top: 2px solid white;
+		p {
+			color: $white;
+		}
+	}
+	.footer-nav {
+		display: flex;
+		justify-content: space-between;
+	}
+}

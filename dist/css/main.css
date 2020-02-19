@@ -1,0 +1,642 @@
+/*! amex-gbt-portal v0.0.1 | (c) 2020 Lewis | MIT License | https://bitbucket.org/mishaosinovskiy/amex-gbt-portal/src/master/ */
+/**
+ * @section Mixins
+ */
+/**
+ * @section Variables
+ */
+/* Fonts */
+@font-face {
+  font-family: 'Benton Sans';
+  src: url("../fonts/benton-sans-light/BentonSansLight.eot");
+  src: url("../fonts/benton-sans-light/BentonSansLight.eot") format("embedded-opentype"), url("../fonts/benton-sans-light/BentonSansLight.woff2") format("woff2"), url("../fonts/benton-sans-light/BentonSansLight.woff") format("woff"), url("../fonts/benton-sans-light/BentonSansLight.ttf") format("truetype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'Benton Sans';
+  src: url("../fonts/benton-sans-book/BentonSansBook.eot");
+  src: url("../fonts/benton-sans-book/BentonSansBook.eot") format("embedded-opentype"), url("../fonts/benton-sans-book/BentonSansBook.woff2") format("woff2"), url("../fonts/benton-sans-book/BentonSansBook.woff") format("woff"), url("../fonts/benton-sans-book/BentonSansBook.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Benton Sans';
+  src: url("../fonts/benton-sans-regular/BentonSansRegular.eot");
+  src: url("../fonts/benton-sans-regular/BentonSansRegular.eot") format("embedded-opentype"), url("../fonts/benton-sans-regular/BentonSansRegular.woff2") format("woff2"), url("../fonts/benton-sans-regular/BentonSansRegular.woff") format("woff"), url("../fonts/benton-sans-regular/BentonSansRegular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Benton Sans';
+  src: url("../fonts/benton-sans-medium/BentonSansMedium.eot");
+  src: url("../fonts/benton-sans-medium/BentonSansMedium.eot") format("embedded-opentype"), url("../fonts/benton-sans-medium/BentonSansMedium.woff2") format("woff2"), url("../fonts/benton-sans-medium/BentonSansMedium.woff") format("woff"), url("../fonts/benton-sans-medium/BentonSansMedium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Benton Sans';
+  src: url("../fonts/benton-sans-bold/BentonSansBold.eot");
+  src: url("../fonts/benton-sans-bold/BentonSansBold.eot") format("embedded-opentype"), url("../fonts/benton-sans-bold/BentonSansBold.woff") format("woff"), url("../fonts/benton-sans-bold/BentonSansBold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+/**
+ * @section Base Styles
+ */
+/* line 5, src/sass/components/_base.scss */
+body {
+  margin: 0 auto;
+  width: 100%;
+  background: #fff;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/* line 13, src/sass/components/_base.scss */
+.banner h1,
+.banner span,
+.booking-form h2,
+.booking-form h3,
+.booking-form p {
+  font-family: "Benton Sans", sans-serif, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 23, src/sass/components/_base.scss */
+.banner h1 {
+  font-weight: bold;
+  color: #006FCF;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+/* line 30, src/sass/components/_base.scss */
+.booking-form h2 {
+  color: #006FCF;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+/* line 36, src/sass/components/_base.scss */
+.booking-form h3 {
+  color: #006FCF;
+  font-size: 24px;
+  line-height: 30px;
+  padding-bottom: 20px;
+}
+
+/* line 43, src/sass/components/_base.scss */
+.booking-form p {
+  color: #00175A;
+  padding-bottom: 30px;
+}
+
+/* line 48, src/sass/components/_base.scss */
+header.booking-header {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 52, src/sass/components/_base.scss */
+header.booking-header img {
+  width: 233px;
+  height: 75px;
+}
+
+/* line 58, src/sass/components/_base.scss */
+.banner {
+  background: #0C0B68 url("../img/header.jpg") center center no-repeat;
+  background-size: cover;
+  height: 480px;
+}
+
+/* line 62, src/sass/components/_base.scss */
+.banner > div {
+  width: 100%;
+}
+
+/* line 65, src/sass/components/_base.scss */
+.banner h1, .banner span {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* line 69, src/sass/components/_base.scss */
+.banner h1 {
+  padding-top: 160px;
+  font-size: 28px;
+  font-weight: normal;
+}
+
+/* line 74, src/sass/components/_base.scss */
+.banner span {
+  font-weight: bold;
+  display: block;
+  font-size: 40px;
+  padding-top: 20px;
+  line-height: 42px;
+}
+
+/* line 84, src/sass/components/_base.scss */
+header, section {
+  padding: 0 20px;
+}
+
+@media only screen and (min-width: 1280px) {
+  /* line 84, src/sass/components/_base.scss */
+  header, section {
+    padding: 0 calc(40px + (50% - (1280px / 2)));
+  }
+}
+
+/* line 92, src/sass/components/_base.scss */
+footer {
+  font-family: "Benton Sans", sans-serif, sans-serif;
+  color: #fff;
+  min-height: 500px;
+  margin-bottom: 100px;
+}
+
+/* line 97, src/sass/components/_base.scss */
+footer .footer-box {
+  margin: 0 auto;
+  background: #006FCF;
+  max-width: 1080px;
+  padding: 100px 100px;
+}
+
+/* line 103, src/sass/components/_base.scss */
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 107, src/sass/components/_base.scss */
+footer ul li {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 112, src/sass/components/_base.scss */
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* line 115, src/sass/components/_base.scss */
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* line 119, src/sass/components/_base.scss */
+footer .footer-text {
+  margin-top: 80px;
+  padding-top: 100px;
+  border-top: 2px solid white;
+}
+
+/* line 123, src/sass/components/_base.scss */
+footer .footer-text p {
+  color: #fff;
+}
+
+/* line 127, src/sass/components/_base.scss */
+footer .footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/**
+ * @section Form Styles
+ */
+/* line 5, src/sass/components/_form.scss */
+.booking-form {
+  font-family: "Benton Sans", sans-serif, sans-serif;
+  max-width: 730px;
+  margin-top: -110px;
+  margin-bottom: 180px;
+}
+
+/* line 10, src/sass/components/_form.scss */
+.booking-form input,
+.booking-form textarea,
+.booking-form select,
+.booking-form button {
+  font-family: "Benton Sans", sans-serif, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/* line 20, src/sass/components/_form.scss */
+.form-section {
+  background: #fff;
+  width: 100%;
+  border: 1px solid rgba(12, 11, 104, 0.2);
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+/* line 26, src/sass/components/_form.scss */
+.form-section-header {
+  background: rgba(0, 111, 207, 0.1);
+  position: relative;
+  padding: 40px 20px 40px 20px;
+  opacity: .5;
+  -webkit-transition: opacity .15s ease-in-out;
+  transition: opacity .15s ease-in-out;
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 26, src/sass/components/_form.scss */
+  .form-section-header {
+    padding: 40px 100px 40px 100px;
+  }
+}
+
+/* line 35, src/sass/components/_form.scss */
+.form-section-header:after {
+  content: '';
+  position: absolute;
+  right: 50px;
+  bottom: 42%;
+  display: inline-block;
+  border: solid rgba(0, 0, 0, 0.4);
+  border-width: 0 2px 2px 0;
+  padding: 8px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+/* line 46, src/sass/components/_form.scss */
+.form-section-header.active-section {
+  border-bottom: 3px solid #eee;
+  opacity: 1;
+  background: #fff;
+}
+
+/* line 50, src/sass/components/_form.scss */
+.form-section-header.active-section:after {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+}
+
+/* line 55, src/sass/components/_form.scss */
+.form-section-container {
+  padding: 40px 20px 140px 20px;
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 55, src/sass/components/_form.scss */
+  .form-section-container {
+    padding: 40px 100px 140px 100px;
+  }
+}
+
+/* line 62, src/sass/components/_form.scss */
+.form-section-container.active-section {
+  height: auto;
+  display: block;
+}
+
+/* line 69, src/sass/components/_form.scss */
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+/* line 74, src/sass/components/_form.scss */
+.input-container label {
+  display: block;
+  color: #006FCF;
+}
+
+/* line 79, src/sass/components/_form.scss */
+.input-container label.required:after {
+  content: '*';
+  font-size: 25px;
+  color: #CF0000;
+  margin-left: 10px;
+}
+
+/* line 86, src/sass/components/_form.scss */
+.input-container input, .input-container select {
+  width: calc(100% - 120px);
+  max-width: 430px;
+  border: none;
+  border-bottom: 1px solid #0C0B68;
+  background: #fff;
+  padding: 15px 20px;
+  color: #0C0B68;
+  border-radius: 0;
+}
+
+/* line 96, src/sass/components/_form.scss */
+.input-container input:focus, .input-container select:focus {
+  background: rgba(0, 111, 207, 0.1);
+}
+
+/* line 100, src/sass/components/_form.scss */
+.input-container select {
+  width: 100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+  display: block;
+  background: url("../svg/icon-down.svg");
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+
+/* line 110, src/sass/components/_form.scss */
+.input-container input[type=date] {
+  background: url("../svg/icon-date.svg");
+  background-position: right 5px center;
+  background-repeat: no-repeat;
+  background-size: 23px 30px;
+}
+
+/* line 116, src/sass/components/_form.scss */
+.input-container input[type=time] {
+  background: url("../svg/icon-time.svg");
+  background-position: right 3px center;
+  background-repeat: no-repeat;
+  background-size: 29px 28px;
+}
+
+/* line 122, src/sass/components/_form.scss */
+.input-container .icon-validation {
+  height: 36px;
+  width: 36px;
+  background: url("../svg/icon-invalid.svg");
+  background-position: right 3px center;
+  background-repeat: no-repeat;
+  background-size: 33px 33px;
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+}
+
+/* line 132, src/sass/components/_form.scss */
+.input-container .icon-validation.valid {
+  background: url("../svg/icon-valid.svg");
+}
+
+/* line 138, src/sass/components/_form.scss */
+.input-container-checkbox {
+  margin-bottom: 30px;
+}
+
+/* line 140, src/sass/components/_form.scss */
+.input-container-checkbox input {
+  color: #0C0B68;
+  width: 20px;
+  height: 20px;
+  border: 1px solid blue;
+}
+
+/* line 146, src/sass/components/_form.scss */
+.input-container-checkbox label {
+  color: #0C0B68;
+}
+
+/* line 153, src/sass/components/_form.scss */
+.input-return-trip.hidden {
+  display: none;
+}
+
+/* Form Tabs */
+/* line 161, src/sass/components/_form.scss */
+#requested-travel-services .form-section-container {
+  padding-top: 0;
+}
+
+/* line 166, src/sass/components/_form.scss */
+.form-section-tabs ul.tab-choises {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 166, src/sass/components/_form.scss */
+  .form-section-tabs ul.tab-choises {
+    width: calc(100% + 200px);
+    margin-left: -100px;
+  }
+}
+
+/* line 177, src/sass/components/_form.scss */
+.form-section-tabs ul.tab-choises > li {
+  width: 25%;
+  min-height: 40px;
+  background-color: rgba(0, 111, 207, 0.1);
+  padding: 40px 10px;
+  text-align: center;
+  color: #0C0B68;
+  border-right: 2px solid #fff;
+  position: relative;
+  -webkit-transition: background .25s ease-in-out;
+  transition: background .25s ease-in-out;
+}
+
+/* line 187, src/sass/components/_form.scss */
+.form-section-tabs ul.tab-choises > li a {
+  position: absolute;
+  border-bottom: 10px solid rgba(0, 111, 207, 0.1);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  text-decoration: none;
+  color: #0C0B68;
+  z-index: 9999;
+  -webkit-transition: background .25s ease-in-out;
+  transition: background .25s ease-in-out;
+}
+
+/* line 202, src/sass/components/_form.scss */
+.form-section-tabs ul.tab-choises > li span {
+  font-size: 16px;
+  line-height: 16px;
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* line 211, src/sass/components/_form.scss */
+.form-section-tabs ul.tab-choises > li:last-of-type {
+  border-right: none;
+}
+
+/* line 214, src/sass/components/_form.scss */
+.form-section-tabs ul.tab-choises > li.active {
+  background: #fff;
+}
+
+/* line 216, src/sass/components/_form.scss */
+.form-section-tabs ul.tab-choises > li.active a {
+  background-position: center 20px !important;
+}
+
+/* line 222, src/sass/components/_form.scss */
+.form-section-tabs .tab-pane {
+  display: none;
+}
+
+/* line 224, src/sass/components/_form.scss */
+.form-section-tabs .tab-pane.active {
+  display: block;
+}
+
+/* line 228, src/sass/components/_form.scss */
+.form-section-tabs .tab-content {
+  padding-top: 40px;
+}
+
+/* line 231, src/sass/components/_form.scss */
+.form-section-tabs .icon-rail a {
+  background: url("../svg/icon-rail.svg") !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: 45px 54px !important;
+}
+
+/* line 237, src/sass/components/_form.scss */
+.form-section-tabs .icon-bus a {
+  background: url("../svg/icon-bus.svg") !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: 46px 54px !important;
+}
+
+/* line 243, src/sass/components/_form.scss */
+.form-section-tabs .icon-visa a {
+  background: url("../svg/icon-visa.svg") !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: 42px 58px !important;
+}
+
+/* line 249, src/sass/components/_form.scss */
+.form-section-tabs .icon-insurance a {
+  background: url("../svg/icon-insurance.svg") !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: 58px 43px !important;
+}
+
+/* Form Details Table */
+/* line 259, src/sass/components/_form.scss */
+.details-table {
+  padding-bottom: 40px;
+}
+
+/* line 263, src/sass/components/_form.scss */
+.details-table .table-header {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  color: #006FCF;
+}
+
+/* line 269, src/sass/components/_form.scss */
+.details-table .table-row {
+  padding: 10px 10px 7px 10px;
+  margin-left: 2vw;
+  font-size: 16px;
+  border-bottom: 1px solid #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 276, src/sass/components/_form.scss */
+.details-table .table-row > div {
+  width: 50%;
+}
+
+/* line 279, src/sass/components/_form.scss */
+.details-table .table-row:last-of-type {
+  display: none;
+}
+
+/* line 283, src/sass/components/_form.scss */
+.details-table .row-value {
+  color: #0C0B68;
+}
+
+/* line 286, src/sass/components/_form.scss */
+.details-table .row-value {
+  color: #006FCF;
+  text-align: left;
+}
+
+/* Buttons */
+/* line 295, src/sass/components/_form.scss */
+button.next,
+button.next-tab,
+input.button {
+  color: #fff;
+  background: #021a58;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 6px;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  font-weight: 100;
+}
+
+/* line 309, src/sass/components/_form.scss */
+button.next-tab {
+  z-index: 1;
+}
+
+/* line 313, src/sass/components/_form.scss */
+button.edit {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  color: #006FCF;
+  border: 1px solid #006FCF;
+  background: transparent;
+  padding: 15px 20px 15px 50px;
+  border-radius: 6px;
+  font-weight: 100;
+  background: url("../svg/icon-edit.svg") !important;
+  background-position: left 15px center !important;
+  background-repeat: no-repeat !important;
+  background-size: 22px 22px !important;
+}
