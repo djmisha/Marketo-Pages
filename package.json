@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"description": "Interactive form",
 	"main": "./dist/index.html",
-	"staging" : "gbt-portal-form.netlify.com",
+	"staging": "gbt-portal-form.netlify.com",
 	"author": {
 		"name": "Lewis",
 		"url": "https://www.teamlewis.com"
