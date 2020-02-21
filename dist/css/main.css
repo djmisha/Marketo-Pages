@@ -10108,7 +10108,44 @@ body, html {
   padding: 10px;
 }
 
-/* line 8, src/sass/components/_form.scss */
+/* line 7, src/sass/components/_form.scss */
+.form-sidebar {
+  margin-top: 0;
+}
+
+/* FROM LIVE SITE*/
+/*DO NOT COPY OVER*/
+/*Slides Styles*/
+/* line 17, src/sass/components/_form.scss */
+.time-is-money-template {
+  /* FORM 2nd Scene*/
+  /* FORM 2nd Scene*/
+  /* FORM 2nd Scene*/
+  /* Results */
+}
+
+/* line 18, src/sass/components/_form.scss */
+.time-is-money-template .inner-2019-hero.inner-2019-hero--landing-page .inner-2019-hero__textbox-overlay-form.expandPlease {
+  width: 1140px;
+}
+
+/* line 21, src/sass/components/_form.scss */
+.time-is-money-template .backASlide {
+  color: #fff;
+}
+
+/* line 24, src/sass/components/_form.scss */
+.time-is-money-template .glide__slide {
+  color: #fff !important;
+  padding: 0 15px;
+}
+
+/* line 28, src/sass/components/_form.scss */
+.time-is-money-template .form-start {
+  max-width: 490px;
+}
+
+/* line 31, src/sass/components/_form.scss */
 .time-is-money-template .travel__policy__buttons {
   font-weight: 500;
   width: 100%;
@@ -10125,13 +10162,13 @@ body, html {
   background: #006FCF;
 }
 
-/* line 18, src/sass/components/_form.scss */
+/* line 41, src/sass/components/_form.scss */
 .time-is-money-template .travel__policy__buttons > div {
   width: 33.3%;
 }
 
-/* line 22, src/sass/components/_form.scss */
-.time-is-money-template .policy__button {
+/* line 47, src/sass/components/_form.scss */
+.time-is-money-template .policy__button label {
   color: rgba(216, 216, 216, 0.6);
   padding: 22px 10px;
   display: -webkit-box;
@@ -10144,16 +10181,37 @@ body, html {
       -ms-flex-align: center;
           align-items: center;
   border-right: 1px solid rgba(255, 255, 255, 0.4);
+  cursor: pointer;
 }
 
-/* line 29, src/sass/components/_form.scss */
-.time-is-money-template .policy__button:last-of-type {
+/* line 58, src/sass/components/_form.scss */
+.time-is-money-template .policy__button input {
+  position: absolute;
+  opacity: 0;
+}
+
+/* line 61, src/sass/components/_form.scss */
+.time-is-money-template .policy__button input:checked + label {
+  color: white;
+  background-color: #001d4b;
+}
+
+/* line 68, src/sass/components/_form.scss */
+.time-is-money-template .policy__button:first-of-type label {
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+/* line 75, src/sass/components/_form.scss */
+.time-is-money-template .policy__button:last-of-type label {
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
   border-right: none;
 }
 
-/* line 33, src/sass/components/_form.scss */
+/* line 84, src/sass/components/_form.scss */
 .time-is-money-template .travel__policy__message {
-  font-size: 14px;
+  font-size: 14px !important;
   border-radius: 7px;
   margin-top: -12px;
   width: 100%;
@@ -10162,7 +10220,7 @@ body, html {
   background-color: rgba(11, 11, 104, 0.15);
 }
 
-/* line 42, src/sass/components/_form.scss */
+/* line 93, src/sass/components/_form.scss */
 .time-is-money-template .form__navigation_elements {
   margin-top: 40px;
   width: 100%;
@@ -10174,7 +10232,7 @@ body, html {
           justify-content: flex-end;
 }
 
-/* line 48, src/sass/components/_form.scss */
+/* line 99, src/sass/components/_form.scss */
 .time-is-money-template .form__navigation_count {
   width: 75px;
   height: 40px;
@@ -10195,13 +10253,13 @@ body, html {
   margin-right: 20px;
 }
 
-/* line 57, src/sass/components/_form.scss */
+/* line 108, src/sass/components/_form.scss */
 .time-is-money-template .form__navigation_count > div {
   padding: 5px 0;
   font-size: 20px;
 }
 
-/* line 62, src/sass/components/_form.scss */
+/* line 113, src/sass/components/_form.scss */
 .time-is-money-template .progress-bullets {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10211,7 +10269,7 @@ body, html {
   width: 75px;
 }
 
-/* line 66, src/sass/components/_form.scss */
+/* line 117, src/sass/components/_form.scss */
 .time-is-money-template .progress-bullets > div {
   width: 9px;
   height: 9px;
@@ -10219,16 +10277,307 @@ body, html {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-/* line 72, src/sass/components/_form.scss */
+/* line 123, src/sass/components/_form.scss */
 .time-is-money-template .progress-bullets .progress-bullets-current {
   background-color: white;
 }
 
-/* line 76, src/sass/components/_form.scss */
+/* line 127, src/sass/components/_form.scss */
 .time-is-money-template button {
   border: none;
   background: #00175A;
   font-weight: 500;
   font-size: 16px;
   text-transform: uppercase;
+}
+
+/* line 137, src/sass/components/_form.scss */
+.time-is-money-template .form-input-row-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 850px;
+  border-top: 1px solid rgba(14, 24, 117, 0.2);
+}
+
+/* line 142, src/sass/components/_form.scss */
+.time-is-money-template .form-input-row-table .form-input-row-question {
+  background-color: rgba(14, 24, 117, 0.1);
+  padding: 36px 36px 30px 36px;
+  max-width: 320px;
+  min-width: 320px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+/* line 151, src/sass/components/_form.scss */
+.time-is-money-template .form-input-row-table .form-input-row-input {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* line 160, src/sass/components/_form.scss */
+.time-is-money-template .input-air-travel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+/* line 166, src/sass/components/_form.scss */
+.time-is-money-template .input-air-travel-label {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 85% !important;
+}
+
+/* line 169, src/sass/components/_form.scss */
+.time-is-money-template .input-air-travel-label label {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 500;
+}
+
+/* line 176, src/sass/components/_form.scss */
+.time-is-money-template .slidecontainer {
+  width: 85%;
+}
+
+/* line 178, src/sass/components/_form.scss */
+.time-is-money-template .slidecontainer input {
+  width: 100%;
+}
+
+/* line 181, src/sass/components/_form.scss */
+.time-is-money-template .input-estimate input {
+  margin: 0 5px;
+  max-width: 130px;
+}
+
+/* line 186, src/sass/components/_form.scss */
+.time-is-money-template .input-estimate label {
+  font-size: 14px !important;
+  line-height: 18px;
+}
+
+/* line 187, src/sass/components/_form.scss */
+.time-is-money-template .input-estimate label span {
+  font-size: 18px;
+  color: #fff;
+}
+
+/* line 189, src/sass/components/_form.scss */
+.time-is-money-template .input-approval {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: flex-start !important;
+}
+
+/* line 192, src/sass/components/_form.scss */
+.time-is-money-template .input-approval > div {
+  margin-left: 40px;
+}
+
+/* line 195, src/sass/components/_form.scss */
+.time-is-money-template .input-approval label {
+  font-size: 18px;
+  margin-left: 5px;
+  font-weight: 500;
+}
+
+/* line 197, src/sass/components/_form.scss */
+.time-is-money-template .input-navigation-2 {
+  padding-left: 40px;
+}
+
+/* line 199, src/sass/components/_form.scss */
+.time-is-money-template .input-navigation-2 .form__navigation_elements {
+  margin-right: 20px;
+  margin-top: 0 !important;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+}
+
+/* line 205, src/sass/components/_form.scss */
+.time-is-money-template .input-name-details {
+  max-width: 530px;
+}
+
+/* line 209, src/sass/components/_form.scss */
+.time-is-money-template .please-provide .small_text {
+  font-size: 13px;
+  padding-top: 40px;
+  font-weight: 300;
+  line-height: 16px;
+}
+
+/* line 211, src/sass/components/_form.scss */
+.time-is-money-template .input-name-details {
+  padding-top: 15px;
+}
+
+/* line 213, src/sass/components/_form.scss */
+.time-is-money-template .input-name-details input {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  margin-bottom: 20px;
+}
+
+/* line 217, src/sass/components/_form.scss */
+.time-is-money-template .input-name-details label {
+  left: 25px;
+}
+
+/* line 221, src/sass/components/_form.scss */
+.time-is-money-template .calc-savings-row {
+  border-top: none !important;
+}
+
+/* line 227, src/sass/components/_form.scss */
+.time-is-money-template .results__teaser {
+  width: 250px;
+  padding: 20px;
+  background: #00175a;
+  color: #fff;
+}
+
+/* line 232, src/sass/components/_form.scss */
+.time-is-money-template .results__teaser .you__can__save {
+  padding: 10px 10px;
+  text-align: center;
+}
+
+/* line 235, src/sass/components/_form.scss */
+.time-is-money-template .results__teaser .you__can__save .up-to {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* line 243, src/sass/components/_form.scss */
+.time-is-money-template .results__teaser .you__can__save .bluerred {
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+/* line 248, src/sass/components/_form.scss */
+.time-is-money-template .results__teaser .you__can__save .small_text {
+  font-size: 13px;
+}
+
+/* line 252, src/sass/components/_form.scss */
+.time-is-money-template .results__teaser .terms__conditions {
+  overflow: scroll;
+  max-height: 250px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+/* line 258, src/sass/components/_form.scss */
+.time-is-money-template .results__teaser .terms__conditions strong {
+  font-weight: bold;
+  display: block;
+}
+
+/* line 263, src/sass/components/_form.scss */
+.time-is-money-template .results__teaser .terms__conditions p {
+  font-size: 10px !important;
+  line-height: 14px !important;
+  padding-bottom: 20px;
+}
+
+/* line 271, src/sass/components/_form.scss */
+.time-is-money-template .results__full {
+  background-color: #00175a;
+  color: #fff;
+  padding: 100px 20px;
+}
+
+/* line 275, src/sass/components/_form.scss */
+.time-is-money-template .results__full .you__can__save {
+  text-align: center;
+}
+
+/* line 278, src/sass/components/_form.scss */
+.time-is-money-template .results__full p {
+  padding-bottom: 40px;
+}
+
+/* line 281, src/sass/components/_form.scss */
+.time-is-money-template .results__full .up_to {
+  font-size: 27px;
+  font-weight: 500;
+}
+
+/* line 285, src/sass/components/_form.scss */
+.time-is-money-template .results__full .cash-money {
+  font-size: 42px;
+}
+
+/* line 288, src/sass/components/_form.scss */
+.time-is-money-template .results__full .with_amex {
+  font-size: 27px;
+  font-weight: 400;
+}
+
+/* line 293, src/sass/components/_form.scss */
+.time-is-money-template .results__full a span {
+  font-size: 12px;
+  line-height: 12px;
+  display: inline-block;
+  border: 1px solid #fff;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin-right: 5px;
+  padding-top: 3px;
+}
+
+/* line 304, src/sass/components/_form.scss */
+.time-is-money-template .results__full .terms__conditions {
+  padding: 0 60px;
+}
+
+/* line 308, src/sass/components/_form.scss */
+.time-is-money-template .error__container .error {
+  color: yellow !important;
+  top: 70px;
 }
