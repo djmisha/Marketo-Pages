@@ -14,12 +14,21 @@ $blue_deep: $blue_core;
 
 
 /*Slides Styles*/
+/*Slides Styles*/
 .time-is-money-template {
+	.form-sidebar {
+		padding: 10px 5px 60px !important;
+		@media screen and (min-width: 820px ) {
+			padding: 40px 40px 100px !important;
+		}
+
+	}
 	.inner-2019-hero.inner-2019-hero--landing-page .inner-2019-hero__textbox-overlay-form.expandPlease {
 		width: 1140px;
 	}
-	.backASlide {
-		color: #fff;
+	#backASlide {
+		color: rgba(#fff, .75);
+		font-size: 16px;
 	}
     .glide__slide {
     	color: #fff !important;
@@ -82,13 +91,13 @@ $blue_deep: $blue_core;
     }
     
 	.travel__policy__message {
-		font-size: 14px !important;
 		border-radius: 7px;
 		margin-top: -12px;
 		width: 100%;
 		padding: 30px 10px 15px 10px;
 		text-align: center;
 		background-color: rgba(#0B0B68, .15);
+		p {font-size: 14px !important;}
 	}
 	.form__navigation_elements {
 		margin-top: 40px;
@@ -135,18 +144,24 @@ $blue_deep: $blue_core;
 	/* FORM 2nd Scene*/
 	/* FORM 2nd Scene*/
 	.form-input-row-table {
+		border-top: 1px solid rgba(#0E1875, .2);
 		display: flex;
 		justify-content: space-between;
-		width: 850px;
-		border-top: 1px solid rgba(#0E1875, .2);
+		flex-direction: column;
+		@media screen and (min-width: 820px ) {
+			flex-direction: row;
+			width: 850px;
+		}
 		.form-input-row-question {
 			background-color: rgba(#0E1875, .1);
 			padding: 36px 36px 30px 36px;
-			max-width: 320px;
-			min-width: 320px;
 			font-size: 18px;
 			line-height: 24px;
 			font-weight: 500;
+			@media screen and (min-width: 820px ) {
+				max-width: 320px;
+				min-width: 320px;
+			}
 		}
 		.form-input-row-input {
 			flex-grow: 1;
@@ -173,14 +188,49 @@ $blue_deep: $blue_core;
 			font-weight: 500;
 		}
 	}
+
 	.slidecontainer {
 		width: 85%;
-		input {width: 100%;}
+		input {
+			width: 100%;
+			height: 10px;
+			border-radius: 5px;  
+			background: #00175A;
+			outline: none;
+			// opacity: 0.7;
+			border: 2px solid rgba(#fff, .15) ;
+
+			// transition: opacity .2s;
+			// -webkit-transition: .2s;
+			// -webkit-appearance: none;
+		}
+		input::-webkit-slider-thumb {
+		  -webkit-appearance: none;
+		  appearance: none;
+		  width: 20px;
+		  height: 20px;
+		  border-radius: 50%; 
+		  background: #00175A;
+		  cursor: pointer;
+		  border: 2px solid #fff !important;
+		}
+		input::-moz-range-thumb {
+		  width: 20px;
+		  height: 20px;
+		  border-radius: 50%;
+		  background: #00175A;
+		  cursor: pointer;
+		  border: 2px solid #fff !important;
+		}
 	}
 	.input-estimate {
 		input {
 			margin: 0 5px;
-			max-width: 130px;
+			width:  calc(100% - 10px) !important;
+			@media screen and (min-width: 820px ) {
+				max-width: 130px;
+				width: 100% !important;
+			}
 		}
 
 		label { font-size: 14px !important; line-height: 18px; }
@@ -189,10 +239,18 @@ $blue_deep: $blue_core;
 	.input-approval {
 		display: flex;
 		justify-content: flex-start !important; 
+		position: relative;
 		> div {
 			margin-left: 40px;
 		}
 		label {font-size: 18px;margin-left: 5px; font-weight: 500;}
+	}
+	#_PreApprovalProcess-error {
+		font-size: 14px !important;
+		color: yellow;
+		position: absolute;
+		top: 65px;
+		font-weight: 400;
 	}
 	.input-navigation-2 {
 		padding-left: 40px;
@@ -203,7 +261,10 @@ $blue_deep: $blue_core;
 		}
 	}
 	.input-name-details {
-		max-width: 530px;
+		@media screen and (min-width: 820px ) {
+			max-width: 530px;
+		}
+
 	}
 	.please-provide {
 		.small_text {font-size: 13px;padding-top: 40px; font-weight: 300; line-height: 16px;}
@@ -214,8 +275,10 @@ $blue_deep: $blue_core;
 			background-color: rgba(#fff, .05) !important;
 			margin-bottom: 20px;
 		}
-		label {
-			left: 25px;
+		// label {
+		// }
+		.md-input label {
+			left: 27px !important;
 		}
 	}
 	.calc-savings-row {
@@ -266,45 +329,35 @@ $blue_deep: $blue_core;
 				padding-bottom: 20px;
 			}
 		}
+		&.expandPlease {
+			width: 100%;
+			padding: 60px 20px 40px 20px;
+			.you__can__save {
+				p {
+					padding-bottom: 40px;
+				}
+			}
+			.up-to {
+				font-size: 27px;
+			}
+			.bluerred {
+				font-size: 42px !important;
+				filter: none;
+			}
+			.small_text {
+				display: none;
+			}
+			.terms__conditions {
+				p {
+					padding-bottom: 10px;
+				}
+			}
+
+		}
 	}
 
-	.results__full {
-		background-color: #00175a;
-		color: #fff;
-		padding: 100px 20px;
-		.you__can__save {
-			text-align: center;
-		}
-		p {
-			padding-bottom: 40px;
-		}
-		.up_to {
-			font-size: 27px;
-			font-weight: 500;
-		}
-		.cash-money {
-			font-size: 42px;
-		}
-		.with_amex {
-			font-size: 27px;
-			font-weight: 400;
 
-		}
-		a span {
-			font-size: 12px;
-			line-height: 12px;
-			display: inline-block;
-			border: 1px solid #fff;
-			width: 18px;
-			height: 18px;
-			border-radius: 50%;
-			margin-right: 5px;
-			padding-top: 3px;
-		}
-		.terms__conditions {
-			padding: 0 60px;
-		}
-	}
+
 	.error__container .error {
 		color: yellow !important;
 		top: 70px;
